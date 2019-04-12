@@ -1,10 +1,11 @@
 import React from 'react'
-import Logo from "./Logo";
-import NavBar from "./NavBar";
 
-import './Header.css'
+import Logo from './Logo'
+import NavBar from './NavBar'
 
-const header = () => {
+import '../css/Header.css'
+
+const Header = () => {
   return (
     <div className="header">
       <Logo />
@@ -13,4 +14,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
