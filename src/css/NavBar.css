@@ -4,4 +4,20 @@
     justify-items: center;
 
     width: 300px;
+
+    font-weight: bold;
+    font-size: 20px;
 }
+
+.nav-bar .link {
+    color: gray;
+}
+
+.nav-bar .link:hover {
+    color: black;
+}
+
+.nav-bar .selected {
+    color: black;
+}
+

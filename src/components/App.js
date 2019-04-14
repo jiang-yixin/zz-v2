@@ -9,17 +9,15 @@ import Contact from './Contact'
 
 const App = () => {
   return (
-    <div className="ui container">
-      <BrowserRouter>
-        <div>
-          <Header />
-          <Route path="/" exact component={Work}/>
-          <Route path="/about" exact component={About}/>
-          <Route path="/contact" exact component={Contact}/>
-          <Footer />
-        </div>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <div className="ui container">
+        <Header />
+        <Route path="/" exact component={Work}/>
+        <Route path="/about" component={About}/>
+        <Route path="/contact" component={Contact}/>
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 
