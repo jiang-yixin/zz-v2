@@ -14,21 +14,21 @@ import Photo8 from '../images/photo-8.jpeg'
 import Photo9 from '../images/photo-9.jpeg'
 
 const ImageList = (props) => {
-    const imageNames = [
-        Photo1, 
-        Photo2, 
-        Photo3, 
-        Photo4, 
-        Photo5, 
-        Photo6, 
-        Photo7, 
-        Photo8, 
-        Photo9
+    const works = [
+        { image: Photo1, link: '/works/1' },
+        { image: Photo2, link: '/works/2' },
+        { image: Photo3, link: '/works/1' },
+        { image: Photo4, link: '/works/2' },
+        { image: Photo5, link: '/works/1' },
+        { image: Photo6, link: '/works/2' },
+        { image: Photo7, link: '/works/1' },
+        { image: Photo8, link: '/works/2' },
+        { image: Photo9, link: '/works/1' }
     ]
 
-    const images = imageNames.map((image) => {
+    const images = works.map((work) => {
         return (
-          <ImageCard key={image} image={image} />
+          <ImageCard key={work.image} image={work.image} link={work.link}/>
         )
     })
 

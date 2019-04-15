@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class ImageCard extends React.Component {
     constructor(props) {
@@ -23,7 +24,9 @@ class ImageCard extends React.Component {
     render() {
         return (
             <div style={{gridRowEnd: `span ${this.state.spans}`}}>
+              <Link to={this.props.link} >
                 <img ref={this.imageRef} src={this.props.image} alt="" />
+              </Link>
             </div>
         )
     }

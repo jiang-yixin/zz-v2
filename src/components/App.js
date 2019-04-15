@@ -7,6 +7,9 @@ import Work from './Work'
 import About from './About'
 import Contact from './Contact'
 
+import Work1 from './works/Work1'
+import Work2 from './works/Work2'
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,6 +18,10 @@ const App = () => {
         <Route path="/" exact component={Work}/>
         <Route path="/about" component={About}/>
         <Route path="/contact" component={Contact}/>
+
+        <Route path="/works/1" component={Work1}/>
+        <Route path="/works/2" component={Work2}/>
+
         <Footer />
       </div>
     </BrowserRouter>
